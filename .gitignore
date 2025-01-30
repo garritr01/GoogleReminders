@@ -1,0 +1,10 @@
+# Ignore Rules
+*.json
+*.pickle
+
+# Unignore Rules
+!*Example.json
+
+# Specific Ignores
+googleVenv/
+src/__pycache__/
