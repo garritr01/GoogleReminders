@@ -31,7 +31,7 @@ function complete() {
 	const statusIndex = srcHeader.indexOf("Status");
 	const rowsToMove = [];
 	const movedIndices = [];
-	for (let i = 1; i < srcData.length; i++) {
+	for (let i = 0; i < srcData.length; i++) {
 		if (srcData[i][statusIndex] == 1) {
 			// Replace completion status with completion timestamp
 			const stampedRow = [...srcData[i].slice(0, srcData[i].length - 1), timestamp];
